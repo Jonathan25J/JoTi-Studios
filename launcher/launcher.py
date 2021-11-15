@@ -8,6 +8,14 @@ pygame.mouse.set_visible(False)
 font_s = pygame.font.SysFont('impact', 120)
 font_p = pygame.font.SysFont('arial', 30)
 
+# Promote screen
+screen.fill('white', (0, 0, screen.get_width(), screen.get_height()))
+logo = pygame.image.load('promote/logo.PNG')
+logo_s = pygame.transform.scale(logo, (700, 500))
+screen.blit(logo_s, logo.get_rect(midleft=(275, 225)))
+pygame.display.update()
+time.sleep(3)
+
 # Load time
 l_time = random.randint(5, 10)
 pes = 10 / l_time
@@ -17,14 +25,16 @@ tp, track = 0, 0
 color = '#' + ''.join([random.choice('ABCDEF0123456789') for i in range(6)])
 
 # Images
-background = pygame.image.load('screen.jpg')
+background = pygame.image.load('loading/background.jpg')
 screen.blit(pygame.transform.scale(background, (1280, 720)), (0, 0))
 
-loadingBar = pygame.image.load('loadingbar.png')
+loadingBar = pygame.image.load('loading/LoadingBar.png')
 
-loadingBar_b = pygame.image.load('ldb_background.png')
+loadingBar_b = pygame.image.load('loading/ldb_background.png')
 
-gamebox = pygame.image.load('gamebox.png')
+games_background = pygame.image.load('games/games_background.jpg')
+
+gamebox = pygame.image.load('games/gamebox.png')
 
 # Load loop
 while True:
@@ -44,14 +54,14 @@ while True:
         screen.blit(pygame.transform.scale(loadingBar_b, (620, 50)), loadingBar.get_rect(midleft=(300, 860)))
         screen.fill('#9298b8', (580, 600, 85, 50))
         screen.blit(font_p.render(str(round(tp / 6.2 + 0.1, 1)) + '%', True, 'white'), (580, 600))
-        screen.blit(font_s.render('JoTi Studios', True, color), (320, 250))
         pygame.display.update()
         track += 1
 
 # Games
 time.sleep(1)
 pygame.mouse.set_visible(True)
-screen.fill('#0d0e2e', (0, 0, screen.get_width(), screen.get_height()))
+# screen.fill('#0d0e2e', (0, 0, screen.get_width(), screen.get_height()))
+screen.blit(pygame.transform.scale(games_background, (1280, 720)), (0, 0))
 
 
 def close():

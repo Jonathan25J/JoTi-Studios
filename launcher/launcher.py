@@ -3,7 +3,7 @@ import pygame, sys, random, time, os
 # Start
 pygame.init()
 screen = pygame.display.set_mode((1280, 720))
-pygame.display.set_caption('JoTi launcher')
+pygame.display.set_caption('JoTi Studios')
 pygame.display.set_icon(pygame.transform.scale(pygame.image.load('assets/promotescreen/logo.PNG'), (30, 30)))
 pygame.mouse.set_visible(False)
 font_s = pygame.font.SysFont('impact', 120)

@@ -70,7 +70,10 @@ def close():
 # First line
 screen.blit(pygame.transform.scale(pygame.image.load('assets/gamesoverview/list/gamebox_1.png'), (200, 200)),
             gamebox.get_rect(topleft=(100, 60)))
-screen.blit(pygame.transform.scale(gamebox, (200, 200)), gamebox.get_rect(topleft=(550, 60)))
+
+screen.blit(pygame.transform.scale(pygame.image.load('assets/gamesoverview/list/gamebox_2.png'), (200, 200)),
+            gamebox.get_rect(topleft=(550, 60)))
+
 screen.blit(pygame.transform.scale(gamebox, (200, 200)), gamebox.get_rect(topleft=(1000, 60)))
 
 # Second line
@@ -97,6 +100,8 @@ while True:
         # Game 2
         if mouse_x in range(550, 750) and mouse_y in range(60, 250):
             print('game 2')
+            os.chdir(os.getcwd() + '/assets/gamesoverview/astroidshooter')
+            exec(open('start.py').read())
             close()
 
         # Game 3

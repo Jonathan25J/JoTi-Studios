@@ -10,7 +10,7 @@ screen = pygame.display.set_mode((1280, 720))
 pygame.display.set_caption("Cleopatra")
 font = pygame.font.Font("assets/fonts/Font.ttf", 40)
 font_1 = pygame.font.Font("assets/fonts/Font.ttf", 13)
-theme = random.randint(1, 5)
+theme = random.randint(1, 3)
 character = random.choice(['wizard', 'lizard', 'knight', 'elf'])
 background = pygame.transform.scale(pygame.image.load('assets/backgrounds/background_' + str(theme) + '.png'),
                                     (1280, 720))
@@ -102,7 +102,7 @@ def e_a_b():
     print('Your highscore was ' + str(int(score)))
     score = 0
     RetrieveMusic()
-    theme = random.randint(1, 5)
+    theme = random.randint(1, 3)
     characterS_group.empty()
     character = random.choice(['wizard', 'lizard', 'knight', 'elf'])
     characterS = Character(150, 635)

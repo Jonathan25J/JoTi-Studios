@@ -3,6 +3,7 @@ Gamelauncher met games gemaakt door Jonathan van de Giessen en Tim van Rooijen 5
 
 Afbeeldingen in de games zijn bijna allemaal zelf gemaakt.
 Sommige games bevatten geluiden op de achtergrond.
+Als laatste disclaimer is dat de games ook bijna volledig zelf gemaakt zijn.
 
 
 

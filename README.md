@@ -1,9 +1,8 @@
 # JoTi-Studios
 Gamelauncher met games gemaakt door Jonathan en Tim
 
-Afbeeldingen in de games zijn bijna allemaal zelf gemaakt.
-Sommige games bevatten geluiden op de achtergrond.
-Als laatste disclaimer is dat de games ook bijna volledig zelf gemaakt zijn.
-
-
-
+Bevat 4 games:
+Cleopatra: val niet in het gat
+Asteroidshooter: schiet de astroids
+Tic-Tac-Toe: boter kaas en eieren
+Snake: pak het blokje zonder uit het scherm te gaan
